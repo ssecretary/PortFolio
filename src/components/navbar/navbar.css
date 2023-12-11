@@ -1,0 +1,117 @@
+.navbar {
+  height: 4rem;
+  width: 100vw;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: rgb(30, 30, 30);
+}
+
+.logo {
+  object-fit: cover;
+  height: 3.25rem;
+  width: 3.25rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.desktopMenuItem {
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.desktopMenuItem:hover {
+  color: yellow;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid yellow;
+}
+
+.contactButton {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1rem;
+  border-radius: 2rem;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+.contactButtonImg {
+  object-fit: cover;
+  height: 1rem;
+  width: 1rem;
+  margin: 1rem;
+}
+
+.active {
+  color: yellow;
+}
+
+.navMenu {
+  position: absolute;
+  top: 4rem;
+  right: 2rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  height: fit-content;
+  min-height: 12rem;
+  background: rgb(40, 40, 40);
+  border-radius: 1rem;
+}
+
+/* .desktopMenuItem {
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.desktopMenuItem:hover {
+  color: yellow;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid yellow;
+} */
+
+.navMenuItem {
+  color: white;
+  padding: 0.5rem 3rem;
+  margin: 0.25rem;
+  background: rgb(30, 30, 30);
+  cursor: pointer;
+}
+
+.navMenuItem :hover {
+  color: yellow;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid yellow;
+  cursor: pointer;
+}
+
+.mobMenu {
+  object-fit: cover;
+  height: 1.8rem;
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .mobMenu {
+    display: flex;
+  }
+
+  .desktopMenu {
+    display: none;
+  }
+
+  .contactButton {
+    display: none;
+  }
+
+}

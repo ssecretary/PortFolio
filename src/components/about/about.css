@@ -1,0 +1,65 @@
+#aboutSection {
+  width: 100vw;
+  max-width: 65rem;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.aboutTitle {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 3rem;
+}
+
+.technologies {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.aboutDesc {
+  font-size: 0.9rem;
+  font-weight: 400;
+  max-width: 55rem;
+  padding: 0 0.5px;
+}
+
+.skillBars {
+  margin: 1.5rem;
+  width: 100vw;
+  max-width: 65rem;
+  text-align: left;
+}
+
+.skillBar {
+  display: flex;
+  margin: 1rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background: rgb(50, 50, 50);
+}
+
+.skillBarImg { 
+  object-fit: cover;
+  height: 3rem;
+  width: 3rem;
+  margin-right: 2rem;
+}
+
+.skillBarText>p {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.carousel {
+  margin: 1rem 0;
+}
+
+.carouselImg {
+  height: 5rem;
+  width: 10rem;
+}
