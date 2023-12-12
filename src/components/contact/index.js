@@ -1,8 +1,8 @@
 import React, { useRef } from 'react'
 import './contact.css'
-import facebook from '../../assets/facebook-icon.png'
+import linkdin from '../../assets/linkdin.png'
 import instagram from '../../assets/instagram.png'
-import youTube from '../../assets/youtube.png'
+import github from '../../assets/git128.png'
 import emailjs from '@emailjs/browser';
 
 function Contact() {
@@ -25,17 +25,17 @@ function Contact() {
     <section id='contactSection'>
       <div id='contact'>
         <h1 className='contactTitle'>Contact Me</h1>
-        <span className='contactDesc'>Please fill out the form below to to discuss any work opportunities.</span>
+        <span className='contactDesc'>Please fill out the form below to discuss any work opportunities.</span>
         <form className='contactForm' ref={form} onSubmit={sendEmail}>
           <input type='text' className='name' placeholder='Your Name' name='to_name' hidden value='Shreyash Secretary'/>
-          <input type='text' className='name' placeholder='Your Name' name='from_name'/>
-          <input type='email' className='email' placeholder='Your Email' name='from_email'/>
-          <textarea name='message' className='msg' placeholder='Enter Message' rows='5'/>
+          <input type='text' className='name' placeholder='Your Name' name='from_name' required/>
+          <input type='email' className='email' placeholder='Your Email' name='from_email' required/>
+          <textarea name='message' className='msg' placeholder='Enter Message' rows='5' required/>
           <button className='submitBtn' value='send' type='submit'>Submit</button>
           <div className='links'>
-            <img src={facebook} alt='facebook' className='link'/>
-            <img src={instagram} alt='instagram' className='link'/>
-            <img src={youTube} alt='youtube' className='link'/>
+            <img src={linkdin} alt='linkdin' className='link' onClick={() => window.open(process.env.REACT_APP_LINKDIN_URL, '_blank')}/>
+            <img src={instagram} alt='instagram' className='link' onClick={() => window.open(process.env.REACT_APP_INSTAGRAM_URL, '_blank')}/>
+            <img src={github} alt='youtube' className='link' onClick={() => window.open(process.env.REACT_APP_GITHUB_URL, '_blank')}/>
           </div>
         </form>
       </div>

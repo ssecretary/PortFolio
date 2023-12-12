@@ -29,10 +29,39 @@
   width: 100vw;
   max-width: 65rem;
   margin-top: 2rem;
+  cursor: pointer;
 }
 
 .worksImg {
   object-fit: cover;
   height: 20rem;
   margin: 0.5rem;
+  width: 16rem;
+}
+
+.hoverWorkImg {
+  background: white;
+  color: black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.projectTitle {
+  margin-left: 1rem;
+  margin-top: -20%;
+  color: rgb(30,30,30);
+  font-weight: 500;
+}
+
+.projectDesc {  
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.contactMe {
+  color: yellow;
 }

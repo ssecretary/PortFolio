@@ -1,7 +1,7 @@
 import React from 'react'
 import './about.css'
 import webDesign from '../../assets/website-design.png'
-import appDesign from '../../assets/app-design.png'
+import backend from '../../assets/backend.png'
 import uiDesign from '../../assets/ui-design.png'
 import python from '../../assets/python.png'
 import react from '../../assets/react.png'
@@ -32,41 +32,41 @@ function About() {
             <img src={webDesign} alt='WebDesign' className='skillBarImg'/>
             <div className='skillBarText'>
               <h2>Web Design</h2>
-              <p>This is demp part, Please entry text of your choice</p>
+              <p>Proficient in HTML, CSS, and JavaScript, with a strong focus on responsive design and accessibility. Successfully collaborated with cross-functional teams to deliver projects on time and within budget, resulting in a 25% increase in website traffic.</p>
             </div>
         </div>
 
         <div className='skillBar'>
-            <img src={appDesign} alt='AppDesign' className='skillBarImg'/>
+            <img src={backend} alt='AppDesign' className='skillBarImg' style={{borderRadius: '10px'}}/>
             <div className='skillBarText'>
-              <h2>App Design</h2>
-              <p>This is demp part, Please entry text of your choice</p>
+              <h2>Backend Development</h2>
+              <p>Experienced in optimizing database queries, reducing query execution time by 40% and enhancing application performance. Skilled in implementing secure authentication and authorization mechanisms, ensuring data integrity and protection.</p>
             </div>
         </div>
 
         <div className='skillBar'>
             <img src={uiDesign} alt='UiDesign' className='skillBarImg'/>
             <div className='skillBarText'>
-              <h2>UI/UX Design</h2>
-              <p>This is demp part, Please entry text of your choice</p>
+              <h2>Software Development</h2>
+              <p>Offers a strong background in creative problem-solving and a proven ability to multi-task and prioritize in fast-paced, stressful environments. Results-oriented professional committed to building a successful career in software development.</p>
             </div>
         </div>
       </div>
       <span className='technologies'>My Expertise</span>
       <div>
-      <ScrollCarousel
-        autoplay
-        autoplaySpeed={5}
-        speed={1}
-        onReady={() => console.log('I am ready')}
-        className='carousel'
-      >
-        {technologies.map((item) => (
-          <div key={item} style={{maxHeight: '20rem', margin: '1rem'}}>
-            <img src={item} alt='item' className='carouselImg'/>
-          </div>
-        ))}
-      </ScrollCarousel>
+        <ScrollCarousel
+          autoplay
+          autoplaySpeed={5}
+          speed={1}
+          onReady={() => console.log('I am ready')}
+          className='carousel'
+        >
+          {technologies.map((item) => (
+            <div key={item} style={{maxHeight: '20rem', margin: '1rem'}}>
+              <img src={item} alt='item' className='carouselImg'/>
+            </div>
+          ))}
+        </ScrollCarousel>
       </div>
     </section>
   )

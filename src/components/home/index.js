@@ -1,6 +1,7 @@
 import React from 'react'
 import './home.css'
-import profile from '../../assets/image.png'
+import myProfile from '../../assets/myProfile1.png'
+import resume from '../../assets/resume.pdf'
 import hireme from '../../assets/hireme.png'
 import download from '../../assets/download.png'
 import { Link } from 'react-scroll'
@@ -10,8 +11,8 @@ function Home() {
 
   const downloadResume = () => {
       const link = document.createElement('a');
-      link.href = profile;
-      link.download = 'profile.png';
+      link.href = resume;
+      link.download = 'Shreyash Secretary.pdf';
 
       document.body.appendChild(link)
       link.click()
@@ -45,7 +46,7 @@ function Home() {
           <Link><button className='resume' onClick={() => downloadResume()}> <img src={download} alt='Resume' className='resumeImg'/>Resume</button></Link>
         </div>
       </div>
-      <img src={profile} alt='Profile' className='profileImg'/>
+      <img src={myProfile} alt='Profile' className='profileImg'/>
     </section>
   )
 }
