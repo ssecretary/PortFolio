@@ -8,7 +8,7 @@ import img5 from '../../assets/docflow.png'
 
 function Works() {
   const [hoverId, setHoverId] = useState(null)
-  const [workObj, setWorkObj] = useState([
+  const workObj = [
     {
       src: img1,
       title: 'ChatInc Proactive',
@@ -38,7 +38,7 @@ function Works() {
       title: 'Docflow',
       description: "An intranet portal which is used to stores all the company's details includes all company's important documents, bills, reciepts etc. This includes feature of generating barcode sticker and directly priting it from site. It contains very huge database. it is an intranet project for <b>Arcelor Mittal and Nippon Steel India Corporation."
     }
-  ])
+  ]
 
   const onCardClick = (url) => {
     if(url) window.open(url, '_blank')
