@@ -36,7 +36,7 @@ function Works() {
     {
       src: img5,
       title: 'Docflow',
-      description: "An intranet portal which is used to stores all the company's details includes all company's important documents, bills, reciepts etc. This includes feature of generating barcode sticker and directly priting it from site. It contains very huge database. it is an intranet project for <b>Arcelor Mittal and Nippon Steel India Corporation."
+      description: "An intranet portal which is used to stores all the company's details includes all company's important documents, bills, reciepts etc. This includes feature of generating barcode sticker and directly printing it from site. It contains very huge database. It is an intranet project for ArcelorMittal Nippon Steel India Corporation."
     }
   ]
 
