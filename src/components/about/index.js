@@ -26,7 +26,7 @@ function About() {
   const aboutDescription = () => {
     return (
       <>
-        <span className='aboutDesc'>Professional and experienced and Full Stack Developer. Being a Full Stack Developer my aim is to provide every possible full stack solution.
+        <span className='aboutDesc'>Professional and experienced Full Stack Developer. Being a Full Stack Developer my aim is to provide every possible full stack solution.
           I am passionate about providing all solutions to clients related to web development.</span>
         <br />
         <span className='aboutDesc'>I have worked with web-based applications as well as front-end development using the latest web technologies. I am specialist in developing customer
