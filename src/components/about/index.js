@@ -3,6 +3,7 @@ import './about.css'
 import webDesign from '../../assets/website-design.png'
 import backend from '../../assets/backend.png'
 import aboutImg from '../../assets/shreyash.png'
+import aboutImg1 from '../../assets/shreyash_circle1.png'
 import uiDesign from '../../assets/ui-design.png'
 import python from '../../assets/python.png'
 import react from '../../assets/react.png'
@@ -55,7 +56,7 @@ function About() {
       {detectDeviceType() === 'Mobile' && 
         <div className='aboutChildDiv1' style={{flexDirection: 'column'}}>
           <div>
-            <img src={aboutImg} alt='Shreyash' className='aboutImgDesktop'/>
+            <img src={aboutImg1} alt='Shreyash' className='aboutImgMobile'/>
           </div>
           <div className='aboutChildDiv2' style={{padding: '1.5rem 1rem'}}>
             {aboutDescription()}
