@@ -54,7 +54,7 @@ function Works() {
       <div className='workImgs'>
         {workObj.map((obj, idx) => {
           return (
-            <div className='worksImg' onMouseEnter={() => setHoverId(idx)} onMouseLeave={() => setHoverId(null)} onClick={() => onCardClick(obj.url)}>
+            <div key={idx} className='worksImg' onMouseEnter={() => setHoverId(idx)} onMouseLeave={() => setHoverId(null)} onClick={() => onCardClick(obj.url)}>
               {hoverId !== idx ? 
                 <div>
                   <img src={obj.src} alt={obj.title} className='worksImg'/>
